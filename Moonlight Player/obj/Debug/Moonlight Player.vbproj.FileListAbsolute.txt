@@ -1,0 +1,11 @@
+E:\AVA\Moonlight Player\Moonlight Player\bin\Debug\Moonlight Player.exe
+E:\AVA\Moonlight Player\Moonlight Player\bin\Debug\Moonlight Player.pdb
+E:\AVA\Moonlight Player\Moonlight Player\bin\Debug\Moonlight Player.xml
+E:\AVA\Moonlight Player\Moonlight Player\obj\Debug\Moonlight_Player.Form1.resources
+E:\AVA\Moonlight Player\Moonlight Player\obj\Debug\Moonlight_Player.Resources.resources
+E:\AVA\Moonlight Player\Moonlight Player\obj\Debug\Moonlight Player.vbproj.GenerateResource.Cache
+E:\AVA\Moonlight Player\Moonlight Player\obj\Debug\Moonlight Player.exe
+E:\AVA\Moonlight Player\Moonlight Player\obj\Debug\Moonlight Player.xml
+E:\AVA\Moonlight Player\Moonlight Player\obj\Debug\Moonlight Player.pdb
+E:\AVA\Moonlight Player\Moonlight Player\obj\Debug\Moonlight_Player.MDIParent1.resources
+E:\AVA\Moonlight Player\Moonlight Player\obj\Debug\Moonlight_Player.Form2.resources
