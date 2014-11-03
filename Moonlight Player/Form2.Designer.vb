@@ -23,30 +23,96 @@ Partial Class Form2
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.playlist = New System.Windows.Forms.ListBox()
+        Me.PlayListPnl = New System.Windows.Forms.TabControl()
+        Me.DefaultList = New System.Windows.Forms.TabPage()
+        Me.btnAddFile = New System.Windows.Forms.Button()
+        Me.Button2 = New System.Windows.Forms.Button()
+        Me.OpenDlg = New System.Windows.Forms.OpenFileDialog()
+        Me.OpenFldDlg = New System.Windows.Forms.FolderBrowserDialog()
+        Me.PlayListPnl.SuspendLayout()
+        Me.DefaultList.SuspendLayout()
         Me.SuspendLayout()
         '
         'playlist
         '
-        Me.playlist.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+        Me.playlist.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.playlist.FormattingEnabled = True
         Me.playlist.ItemHeight = 12
-        Me.playlist.Location = New System.Drawing.Point(12, 12)
+        Me.playlist.Location = New System.Drawing.Point(6, 6)
         Me.playlist.Name = "playlist"
-        Me.playlist.Size = New System.Drawing.Size(441, 232)
+        Me.playlist.Size = New System.Drawing.Size(421, 412)
         Me.playlist.TabIndex = 0
+        '
+        'PlayListPnl
+        '
+        Me.PlayListPnl.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.PlayListPnl.Controls.Add(Me.DefaultList)
+        Me.PlayListPnl.Location = New System.Drawing.Point(12, 5)
+        Me.PlayListPnl.Name = "PlayListPnl"
+        Me.PlayListPnl.SelectedIndex = 0
+        Me.PlayListPnl.Size = New System.Drawing.Size(441, 451)
+        Me.PlayListPnl.TabIndex = 1
+        '
+        'DefaultList
+        '
+        Me.DefaultList.Controls.Add(Me.playlist)
+        Me.DefaultList.Location = New System.Drawing.Point(4, 22)
+        Me.DefaultList.Name = "DefaultList"
+        Me.DefaultList.Padding = New System.Windows.Forms.Padding(3)
+        Me.DefaultList.Size = New System.Drawing.Size(433, 425)
+        Me.DefaultList.TabIndex = 0
+        Me.DefaultList.Text = "默认"
+        Me.DefaultList.UseVisualStyleBackColor = True
+        '
+        'btnAddFile
+        '
+        Me.btnAddFile.Location = New System.Drawing.Point(12, 462)
+        Me.btnAddFile.Name = "btnAddFile"
+        Me.btnAddFile.Size = New System.Drawing.Size(75, 23)
+        Me.btnAddFile.TabIndex = 1
+        Me.btnAddFile.Text = "添加文件"
+        Me.btnAddFile.UseVisualStyleBackColor = True
+        '
+        'Button2
+        '
+        Me.Button2.Location = New System.Drawing.Point(93, 462)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(75, 23)
+        Me.Button2.TabIndex = 2
+        Me.Button2.Text = "添加文件夹"
+        Me.Button2.UseVisualStyleBackColor = True
+        '
+        'OpenDlg
+        '
+        Me.OpenDlg.FileName = "*.mp3"
+        Me.OpenDlg.Multiselect = True
+        Me.OpenDlg.Title = "添加音乐文件"
         '
         'Form2
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(465, 260)
-        Me.Controls.Add(Me.playlist)
+        Me.ClientSize = New System.Drawing.Size(465, 496)
+        Me.Controls.Add(Me.btnAddFile)
+        Me.Controls.Add(Me.Button2)
+        Me.Controls.Add(Me.PlayListPnl)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "Form2"
         Me.Text = "Form2"
+        Me.PlayListPnl.ResumeLayout(False)
+        Me.DefaultList.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
     Friend WithEvents playlist As System.Windows.Forms.ListBox
+    Friend WithEvents PlayListPnl As System.Windows.Forms.TabControl
+    Friend WithEvents DefaultList As System.Windows.Forms.TabPage
+    Friend WithEvents btnAddFile As System.Windows.Forms.Button
+    Friend WithEvents Button2 As System.Windows.Forms.Button
+    Friend WithEvents OpenDlg As System.Windows.Forms.OpenFileDialog
+    Friend WithEvents OpenFldDlg As System.Windows.Forms.FolderBrowserDialog
 End Class

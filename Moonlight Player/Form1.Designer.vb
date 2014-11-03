@@ -24,37 +24,26 @@ Partial Class Form1
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Me.Button1 = New System.Windows.Forms.Button()
-        Me.musicfile = New System.Windows.Forms.TextBox()
         Me.ProgressBar1 = New System.Windows.Forms.ProgressBar()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.btnhide = New System.Windows.Forms.Button()
         Me.btnmin = New System.Windows.Forms.Button()
         Me.btncls = New System.Windows.Forms.Button()
         Me.lblTtl = New System.Windows.Forms.Label()
-        Me.OpenDlg = New System.Windows.Forms.OpenFileDialog()
-        Me.OpenFldDlg = New System.Windows.Forms.FolderBrowserDialog()
         Me.SuspendLayout()
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(320, 109)
+        Me.Button1.Location = New System.Drawing.Point(320, 54)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(75, 23)
         Me.Button1.TabIndex = 0
-        Me.Button1.Text = "Button1"
+        Me.Button1.Text = "播放"
         Me.Button1.UseVisualStyleBackColor = True
-        '
-        'musicfile
-        '
-        Me.musicfile.Location = New System.Drawing.Point(12, 66)
-        Me.musicfile.Name = "musicfile"
-        Me.musicfile.Size = New System.Drawing.Size(383, 21)
-        Me.musicfile.TabIndex = 1
-        Me.musicfile.Text = "C:\Users\AVAS\Desktop\小爱的妈 -江山雪.mp3"
         '
         'ProgressBar1
         '
-        Me.ProgressBar1.Location = New System.Drawing.Point(12, 93)
+        Me.ProgressBar1.Location = New System.Drawing.Point(12, 38)
         Me.ProgressBar1.Name = "ProgressBar1"
         Me.ProgressBar1.Size = New System.Drawing.Size(383, 10)
         Me.ProgressBar1.TabIndex = 2
@@ -109,13 +98,9 @@ Partial Class Form1
         Me.lblTtl.Font = New System.Drawing.Font("微软雅黑", 10.5!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.lblTtl.Location = New System.Drawing.Point(0, 0)
         Me.lblTtl.Name = "lblTtl"
-        Me.lblTtl.Size = New System.Drawing.Size(401, 26)
+        Me.lblTtl.Size = New System.Drawing.Size(401, 35)
         Me.lblTtl.TabIndex = 6
-        Me.lblTtl.Text = "Moonlight Player"
-        '
-        'OpenDlg
-        '
-        Me.OpenDlg.FileName = "OpenFileDialog1"
+        Me.lblTtl.Text = "Moonlight Player Alpha"
         '
         'Form1
         '
@@ -127,25 +112,20 @@ Partial Class Form1
         Me.Controls.Add(Me.btnmin)
         Me.Controls.Add(Me.btnhide)
         Me.Controls.Add(Me.ProgressBar1)
-        Me.Controls.Add(Me.musicfile)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.lblTtl)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "Form1"
         Me.Text = "Moonlight Player"
         Me.ResumeLayout(False)
-        Me.PerformLayout()
 
     End Sub
     Friend WithEvents Button1 As System.Windows.Forms.Button
-    Friend WithEvents musicfile As System.Windows.Forms.TextBox
     Friend WithEvents ProgressBar1 As System.Windows.Forms.ProgressBar
     Friend WithEvents Timer1 As System.Windows.Forms.Timer
     Friend WithEvents btnhide As System.Windows.Forms.Button
     Friend WithEvents btnmin As System.Windows.Forms.Button
     Friend WithEvents btncls As System.Windows.Forms.Button
     Friend WithEvents lblTtl As System.Windows.Forms.Label
-    Friend WithEvents OpenDlg As System.Windows.Forms.OpenFileDialog
-    Friend WithEvents OpenFldDlg As System.Windows.Forms.FolderBrowserDialog
 
 End Class

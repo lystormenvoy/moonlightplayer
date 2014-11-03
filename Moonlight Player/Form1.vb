@@ -2,12 +2,11 @@
 
 Public Class Form1
     Dim player As New ZPlay
+    Dim i As Integer = 0
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        player.OpenFile(musicfile.Text, TStreamFormat.sfAutodetect)
+        player.OpenFile(Form2.playlist.SelectedItem, TStreamFormat.sfAutodetect)
         player.StartPlayback()
         Timer1.Enabled = True
-        Form2.playlist.Items.Add(musicfile.Text)
-
     End Sub
 
     Public Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -25,17 +24,19 @@ Public Class Form1
     End Sub
 
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
+        Dim pos As New TStreamTime()
         Dim StreamInfo As New TStreamInfo()
-        player.GetStreamInfo(StreamInfo)
 
+        player.GetStreamInfo(StreamInfo)
         ProgressBar1.Minimum = 0
         ProgressBar1.Maximum = CInt(Fix(StreamInfo.Length.sec))
-
-        Dim pos As New TStreamTime()
         player.GetPosition(pos)
 
         If ProgressBar1.Maximum > CInt(Fix(pos.sec)) Then
             ProgressBar1.Value = CInt(Fix(pos.sec))
+        Else
+            i += 1
+            player.OpenFile(Form2.playlist.Items.Item(i), TStreamFormat.sfAutodetect)
         End If
     End Sub
 
