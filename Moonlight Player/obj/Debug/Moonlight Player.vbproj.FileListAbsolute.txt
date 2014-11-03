@@ -9,3 +9,14 @@ E:\AVA\Moonlight Player\Moonlight Player\obj\Debug\Moonlight Player.xml
 E:\AVA\Moonlight Player\Moonlight Player\obj\Debug\Moonlight Player.pdb
 E:\AVA\Moonlight Player\Moonlight Player\obj\Debug\Moonlight_Player.MDIParent1.resources
 E:\AVA\Moonlight Player\Moonlight Player\obj\Debug\Moonlight_Player.Form2.resources
+D:\开发工具\开发项目\moonlightplayer\Moonlight Player\obj\Debug\Moonlight Player.xml
+D:\开发工具\开发项目\moonlightplayer\Moonlight Player\bin\Debug\Moonlight Player.exe
+D:\开发工具\开发项目\moonlightplayer\Moonlight Player\bin\Debug\Moonlight Player.pdb
+D:\开发工具\开发项目\moonlightplayer\Moonlight Player\bin\Debug\Moonlight Player.xml
+D:\开发工具\开发项目\moonlightplayer\Moonlight Player\obj\Debug\Moonlight_Player.Form1.resources
+D:\开发工具\开发项目\moonlightplayer\Moonlight Player\obj\Debug\Moonlight_Player.Form2.resources
+D:\开发工具\开发项目\moonlightplayer\Moonlight Player\obj\Debug\Moonlight_Player.MDIParent1.resources
+D:\开发工具\开发项目\moonlightplayer\Moonlight Player\obj\Debug\Moonlight_Player.Resources.resources
+D:\开发工具\开发项目\moonlightplayer\Moonlight Player\obj\Debug\Moonlight Player.vbproj.GenerateResource.Cache
+D:\开发工具\开发项目\moonlightplayer\Moonlight Player\obj\Debug\Moonlight Player.exe
+D:\开发工具\开发项目\moonlightplayer\Moonlight Player\obj\Debug\Moonlight Player.pdb

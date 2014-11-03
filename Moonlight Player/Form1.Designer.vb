@@ -23,23 +23,27 @@ Partial Class Form1
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.btnPlay = New System.Windows.Forms.Button()
         Me.ProgressBar1 = New System.Windows.Forms.ProgressBar()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.btnhide = New System.Windows.Forms.Button()
         Me.btnmin = New System.Windows.Forms.Button()
         Me.btncls = New System.Windows.Forms.Button()
         Me.lblTtl = New System.Windows.Forms.Label()
+        Me.btnStop = New System.Windows.Forms.Button()
+        Me.btnPre = New System.Windows.Forms.Button()
+        Me.btnNxt = New System.Windows.Forms.Button()
+        Me.NotifyIcon1 = New System.Windows.Forms.NotifyIcon(Me.components)
         Me.SuspendLayout()
         '
-        'Button1
+        'btnPlay
         '
-        Me.Button1.Location = New System.Drawing.Point(320, 54)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
-        Me.Button1.TabIndex = 0
-        Me.Button1.Text = "播放"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.btnPlay.Location = New System.Drawing.Point(68, 54)
+        Me.btnPlay.Name = "btnPlay"
+        Me.btnPlay.Size = New System.Drawing.Size(50, 23)
+        Me.btnPlay.TabIndex = 0
+        Me.btnPlay.Text = "播放"
+        Me.btnPlay.UseVisualStyleBackColor = True
         '
         'ProgressBar1
         '
@@ -102,17 +106,52 @@ Partial Class Form1
         Me.lblTtl.TabIndex = 6
         Me.lblTtl.Text = "Moonlight Player Alpha"
         '
+        'btnStop
+        '
+        Me.btnStop.Location = New System.Drawing.Point(180, 54)
+        Me.btnStop.Name = "btnStop"
+        Me.btnStop.Size = New System.Drawing.Size(50, 23)
+        Me.btnStop.TabIndex = 7
+        Me.btnStop.Text = "停止"
+        Me.btnStop.UseVisualStyleBackColor = True
+        '
+        'btnPre
+        '
+        Me.btnPre.Location = New System.Drawing.Point(12, 54)
+        Me.btnPre.Name = "btnPre"
+        Me.btnPre.Size = New System.Drawing.Size(50, 23)
+        Me.btnPre.TabIndex = 8
+        Me.btnPre.Text = "上一首"
+        Me.btnPre.UseVisualStyleBackColor = True
+        '
+        'btnNxt
+        '
+        Me.btnNxt.Location = New System.Drawing.Point(124, 54)
+        Me.btnNxt.Name = "btnNxt"
+        Me.btnNxt.Size = New System.Drawing.Size(50, 23)
+        Me.btnNxt.TabIndex = 9
+        Me.btnNxt.Text = "下一首"
+        Me.btnNxt.UseVisualStyleBackColor = True
+        '
+        'NotifyIcon1
+        '
+        Me.NotifyIcon1.Text = "NotifyIcon1"
+        Me.NotifyIcon1.Visible = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(403, 179)
+        Me.Controls.Add(Me.btnNxt)
+        Me.Controls.Add(Me.btnPre)
+        Me.Controls.Add(Me.btnStop)
         Me.Controls.Add(Me.btncls)
         Me.Controls.Add(Me.btnmin)
         Me.Controls.Add(Me.btnhide)
         Me.Controls.Add(Me.ProgressBar1)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.btnPlay)
         Me.Controls.Add(Me.lblTtl)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "Form1"
@@ -120,12 +159,16 @@ Partial Class Form1
         Me.ResumeLayout(False)
 
     End Sub
-    Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents btnPlay As System.Windows.Forms.Button
     Friend WithEvents ProgressBar1 As System.Windows.Forms.ProgressBar
     Friend WithEvents Timer1 As System.Windows.Forms.Timer
     Friend WithEvents btnhide As System.Windows.Forms.Button
     Friend WithEvents btnmin As System.Windows.Forms.Button
     Friend WithEvents btncls As System.Windows.Forms.Button
     Friend WithEvents lblTtl As System.Windows.Forms.Label
+    Friend WithEvents btnStop As System.Windows.Forms.Button
+    Friend WithEvents btnPre As System.Windows.Forms.Button
+    Friend WithEvents btnNxt As System.Windows.Forms.Button
+    Friend WithEvents NotifyIcon1 As System.Windows.Forms.NotifyIcon
 
 End Class

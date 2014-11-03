@@ -27,8 +27,6 @@ Partial Class Form2
         Me.DefaultList = New System.Windows.Forms.TabPage()
         Me.btnAddFile = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
-        Me.OpenDlg = New System.Windows.Forms.OpenFileDialog()
-        Me.OpenFldDlg = New System.Windows.Forms.FolderBrowserDialog()
         Me.PlayListPnl.SuspendLayout()
         Me.DefaultList.SuspendLayout()
         Me.SuspendLayout()
@@ -42,7 +40,7 @@ Partial Class Form2
         Me.playlist.ItemHeight = 12
         Me.playlist.Location = New System.Drawing.Point(6, 6)
         Me.playlist.Name = "playlist"
-        Me.playlist.Size = New System.Drawing.Size(421, 412)
+        Me.playlist.Size = New System.Drawing.Size(436, 412)
         Me.playlist.TabIndex = 0
         '
         'PlayListPnl
@@ -51,10 +49,10 @@ Partial Class Form2
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.PlayListPnl.Controls.Add(Me.DefaultList)
-        Me.PlayListPnl.Location = New System.Drawing.Point(12, 5)
+        Me.PlayListPnl.Location = New System.Drawing.Point(4, 5)
         Me.PlayListPnl.Name = "PlayListPnl"
         Me.PlayListPnl.SelectedIndex = 0
-        Me.PlayListPnl.Size = New System.Drawing.Size(441, 451)
+        Me.PlayListPnl.Size = New System.Drawing.Size(456, 451)
         Me.PlayListPnl.TabIndex = 1
         '
         'DefaultList
@@ -63,14 +61,14 @@ Partial Class Form2
         Me.DefaultList.Location = New System.Drawing.Point(4, 22)
         Me.DefaultList.Name = "DefaultList"
         Me.DefaultList.Padding = New System.Windows.Forms.Padding(3)
-        Me.DefaultList.Size = New System.Drawing.Size(433, 425)
+        Me.DefaultList.Size = New System.Drawing.Size(448, 425)
         Me.DefaultList.TabIndex = 0
         Me.DefaultList.Text = "默认"
         Me.DefaultList.UseVisualStyleBackColor = True
         '
         'btnAddFile
         '
-        Me.btnAddFile.Location = New System.Drawing.Point(12, 462)
+        Me.btnAddFile.Location = New System.Drawing.Point(4, 462)
         Me.btnAddFile.Name = "btnAddFile"
         Me.btnAddFile.Size = New System.Drawing.Size(75, 23)
         Me.btnAddFile.TabIndex = 1
@@ -79,24 +77,18 @@ Partial Class Form2
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(93, 462)
+        Me.Button2.Location = New System.Drawing.Point(85, 462)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(75, 23)
         Me.Button2.TabIndex = 2
         Me.Button2.Text = "添加文件夹"
         Me.Button2.UseVisualStyleBackColor = True
         '
-        'OpenDlg
-        '
-        Me.OpenDlg.FileName = "*.mp3"
-        Me.OpenDlg.Multiselect = True
-        Me.OpenDlg.Title = "添加音乐文件"
-        '
         'Form2
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(465, 496)
+        Me.ClientSize = New System.Drawing.Size(465, 490)
         Me.Controls.Add(Me.btnAddFile)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.PlayListPnl)
@@ -113,6 +105,4 @@ Partial Class Form2
     Friend WithEvents DefaultList As System.Windows.Forms.TabPage
     Friend WithEvents btnAddFile As System.Windows.Forms.Button
     Friend WithEvents Button2 As System.Windows.Forms.Button
-    Friend WithEvents OpenDlg As System.Windows.Forms.OpenFileDialog
-    Friend WithEvents OpenFldDlg As System.Windows.Forms.FolderBrowserDialog
 End Class
