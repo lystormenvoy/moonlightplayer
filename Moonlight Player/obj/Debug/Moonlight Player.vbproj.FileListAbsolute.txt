@@ -20,3 +20,17 @@ D:\开发工具\开发项目\moonlightplayer\Moonlight Player\obj\Debug\Moonligh
 D:\开发工具\开发项目\moonlightplayer\Moonlight Player\obj\Debug\Moonlight Player.vbproj.GenerateResource.Cache
 D:\开发工具\开发项目\moonlightplayer\Moonlight Player\obj\Debug\Moonlight Player.exe
 D:\开发工具\开发项目\moonlightplayer\Moonlight Player\obj\Debug\Moonlight Player.pdb
+E:\AVA\MoonlightPlayer\Moonlight Player\obj\Debug\Moonlight Player.exe
+E:\AVA\MoonlightPlayer\Moonlight Player\obj\Debug\Moonlight Player.xml
+E:\AVA\MoonlightPlayer\Moonlight Player\obj\Debug\Moonlight Player.pdb
+E:\AVA\MoonlightPlayer\Moonlight Player\bin\Debug\Moonlight Player.exe
+E:\AVA\MoonlightPlayer\Moonlight Player\bin\Debug\Moonlight Player.pdb
+E:\AVA\MoonlightPlayer\Moonlight Player\bin\Debug\Moonlight Player.xml
+E:\AVA\MoonlightPlayer\Moonlight Player\obj\Debug\Moonlight_Player.Form1.resources
+E:\AVA\MoonlightPlayer\Moonlight Player\obj\Debug\Moonlight_Player.Form2.resources
+E:\AVA\MoonlightPlayer\Moonlight Player\obj\Debug\Moonlight_Player.MDIParent1.resources
+E:\AVA\MoonlightPlayer\Moonlight Player\obj\Debug\Moonlight_Player.Resources.resources
+E:\AVA\MoonlightPlayer\Moonlight Player\obj\Debug\Moonlight Player.vbproj.GenerateResource.Cache
+E:\AVA\MoonlightPlayer\Moonlight Player\bin\Debug\Moonlight Player.exe.config
+E:\AVA\MoonlightPlayer\Moonlight Player\bin\Debug\Bass.Net.dll
+E:\AVA\MoonlightPlayer\Moonlight Player\obj\Debug\Moonlight Player.vbprojResolveAssemblyReference.cache
