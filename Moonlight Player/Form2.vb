@@ -1,7 +1,15 @@
 ﻿Imports System.IO
-Public Class Form2
+Imports System.Drawing
+Imports System.Text
+Imports System.Windows.Forms
+Imports LayeredSkin.Forms
+Imports LayeredSkin.DirectUI
+Imports Un4seen.Bass
+Imports Un4seen.Bass.BassNet
 
-    Private Sub btnAddFile_Click(sender As Object, e As EventArgs) Handles btnAddFile.Click
+
+Public Class Form2
+    Public Sub btnAddFile_Click(sender As Object, e As EventArgs) Handles btnAddFile.Click
         Dim OpenDlg = New OpenFileDialog
         OpenDlg.Multiselect = True
         OpenDlg.CheckFileExists = True
@@ -11,6 +19,7 @@ Public Class Form2
                 playlist.Items.Add(filename)
             Next
         End If
+
 
     End Sub
 
@@ -39,6 +48,22 @@ Public Class Form2
             For i = 0 To strDir.Length - 1
                 GetAllFile(strDir(i))
             Next
+        End If
+    End Sub
+
+    Private Sub Form2_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
+
+    Private Sub List1_ItemClick(sender As Object, e As LayeredSkin.Controls.ItemClickEventArgs)
+
+    End Sub
+
+    Public Sub playlist_SltChg(ByVal index)
+        If index >= 0 And index <= playlist.Items.Count - 1 Then
+            playlist.SetSelected(index, True)
+        Else
+            playlist.SetSelected(0, True)
         End If
     End Sub
 End Class

@@ -34,3 +34,7 @@ E:\AVA\MoonlightPlayer\Moonlight Player\obj\Debug\Moonlight Player.vbproj.Genera
 E:\AVA\MoonlightPlayer\Moonlight Player\bin\Debug\Moonlight Player.exe.config
 E:\AVA\MoonlightPlayer\Moonlight Player\bin\Debug\Bass.Net.dll
 E:\AVA\MoonlightPlayer\Moonlight Player\obj\Debug\Moonlight Player.vbprojResolveAssemblyReference.cache
+D:\开发工具\开发项目\moonlightplayer\Moonlight Player\bin\Debug\Moonlight Player.exe.config
+D:\开发工具\开发项目\moonlightplayer\Moonlight Player\bin\Debug\Bass.Net.dll
+D:\开发工具\开发项目\moonlightplayer\Moonlight Player\bin\Debug\LayeredSkin.dll
+D:\开发工具\开发项目\moonlightplayer\Moonlight Player\obj\Debug\Moonlight Player.vbprojResolveAssemblyReference.cache

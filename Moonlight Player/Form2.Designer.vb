@@ -49,10 +49,10 @@ Partial Class Form2
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.PlayListPnl.Controls.Add(Me.DefaultList)
-        Me.PlayListPnl.Location = New System.Drawing.Point(4, 5)
+        Me.PlayListPnl.Location = New System.Drawing.Point(4, 4)
         Me.PlayListPnl.Name = "PlayListPnl"
         Me.PlayListPnl.SelectedIndex = 0
-        Me.PlayListPnl.Size = New System.Drawing.Size(456, 451)
+        Me.PlayListPnl.Size = New System.Drawing.Size(456, 452)
         Me.PlayListPnl.TabIndex = 1
         '
         'DefaultList
@@ -61,7 +61,7 @@ Partial Class Form2
         Me.DefaultList.Location = New System.Drawing.Point(4, 22)
         Me.DefaultList.Name = "DefaultList"
         Me.DefaultList.Padding = New System.Windows.Forms.Padding(3)
-        Me.DefaultList.Size = New System.Drawing.Size(448, 425)
+        Me.DefaultList.Size = New System.Drawing.Size(448, 426)
         Me.DefaultList.TabIndex = 0
         Me.DefaultList.Text = "默认"
         Me.DefaultList.UseVisualStyleBackColor = True

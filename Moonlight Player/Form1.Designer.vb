@@ -34,6 +34,8 @@ Partial Class Form1
         Me.btnPre = New System.Windows.Forms.Button()
         Me.btnNxt = New System.Windows.Forms.Button()
         Me.NotifyIcon1 = New System.Windows.Forms.NotifyIcon(Me.components)
+        Me.Vol1 = New System.Windows.Forms.TrackBar()
+        CType(Me.Vol1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'btnPlay
@@ -49,7 +51,7 @@ Partial Class Form1
         '
         Me.ProgressBar1.Location = New System.Drawing.Point(12, 38)
         Me.ProgressBar1.Name = "ProgressBar1"
-        Me.ProgressBar1.Size = New System.Drawing.Size(383, 10)
+        Me.ProgressBar1.Size = New System.Drawing.Size(276, 10)
         Me.ProgressBar1.TabIndex = 2
         '
         'Timer1
@@ -138,12 +140,25 @@ Partial Class Form1
         Me.NotifyIcon1.Text = "NotifyIcon1"
         Me.NotifyIcon1.Visible = True
         '
+        'Vol1
+        '
+        Me.Vol1.AutoSize = False
+        Me.Vol1.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Vol1.Location = New System.Drawing.Point(294, 37)
+        Me.Vol1.Maximum = 100
+        Me.Vol1.Name = "Vol1"
+        Me.Vol1.Size = New System.Drawing.Size(104, 15)
+        Me.Vol1.TabIndex = 10
+        Me.Vol1.TickStyle = System.Windows.Forms.TickStyle.None
+        Me.Vol1.Value = 100
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(403, 179)
+        Me.Controls.Add(Me.Vol1)
         Me.Controls.Add(Me.btnNxt)
         Me.Controls.Add(Me.btnPre)
         Me.Controls.Add(Me.btnStop)
@@ -156,6 +171,7 @@ Partial Class Form1
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "Form1"
         Me.Text = "Moonlight Player"
+        CType(Me.Vol1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -170,5 +186,6 @@ Partial Class Form1
     Friend WithEvents btnPre As System.Windows.Forms.Button
     Friend WithEvents btnNxt As System.Windows.Forms.Button
     Friend WithEvents NotifyIcon1 As System.Windows.Forms.NotifyIcon
+    Friend WithEvents Vol1 As System.Windows.Forms.TrackBar
 
 End Class
